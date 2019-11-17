@@ -1,0 +1,98 @@
+/* Marcel Wurm
+/* Set custome background*/
+body{
+  background-image: url(https://arma3.com/assets/img/wallpapers/contact/2/Arma%203%20Contact_wallpaper_1920x1200.jpg);
+}
+
+/* Set custome background color, black text and some padding */
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 50;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    text-decoration: none;
+    color:  white;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 909px}
+
+/* height is set to 'auto' for small screens */
+@media screen and (max-width: 1000px) {
+  .sidenav {
+    height: auto;
+    padding: 50px;
+    position: fixed;
+  }
+  .row.content {height:auto;}
+}
+
+textarea {
+  width: 1000px;
+  height: 250px;
+  resize: none;
+}
+#searchbar {
+  width: 174px;
+  height: 33px;
+  border-color: black;
+  font-weight: bold;
+  background-color: #151515;
+  color: #848484;
+}
+
+#button02 {
+  width: 174px;
+}
+
+#panel {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  border: 1px solid black;
+}
+
+#panel01 {
+  border-color: black;
+  font-weight: bold;
+  background-color: #151515;
+  color: #848484;
+}
+
+#thick {
+  font-weight: bold;
+}
+
+#panel02 {
+  font-weight: normal;
+}
+
+#feed {
+  color: white;
+}
+#button {
+  width: 174px;
+  background-color: #848484;
+  margine: hsl(210, 100%, 75%);
+  border: hsl(210, 100%, 75%);
+    color: black;
+}
+
+#navbarFont {
+  font-weight: bold;
+  color: white;
+}
