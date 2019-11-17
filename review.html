@@ -1,0 +1,86 @@
+<!DOCTYPE html><!--Marcel Wurm-->
+<html lang="de">
+<head>
+
+  <title>MemeBandit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--including files from W3Schools.com-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="review.js"></script><!--own js-file-->
+  <link  rel="stylesheet" type="text/css" href="ReviewsCSS.css"/> <!--own Css-file-->
+
+</head>
+<body>
+
+<!--navigation bar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" id="navbarFont">MemeBandit</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="">HOME</a></li>
+        <li><a href="">BIBLIOTHEK</a></li>
+        <li><a href="">REVIEWS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--general text definition-->
+<div class="container-fluid text-center">
+  <div class="row content">
+    <!--left sidenav-->
+    <div class="col-sm-2 sidenav">
+    </div>
+    <!--Text center-->
+    <!--Edit a Review-->
+    <div class="col-sm-8 text-left">
+      <br><br><br>
+          <div class="box" id="feed">
+            <h1>
+              <center>Reviews</center>
+            </h1>
+      <div class="form-group">
+         <br><label for="usr">Titel</label>
+         <input type="text" class="form-control" placeholder="Geben Sie Ihren Text ein..."name="title" id="panel01">
+      </div>
+      <div class="form-group">
+        <label for="comment">Text</label>
+        <br><textarea style="resize:none" rows="10" placeholder="Geben Sie Ihren Text ein..."name="text" id="panel01" ></textarea>
+        <br><br><input type="text" name="search" placeholder="Mit Spiel verknüpfen..."name="game" id="searchbar">
+        <br><br><button type="button" class="btn btn default" id="button" onclick="publishReview();">Veröffentlichen</button>
+      </div>
+    </div>
+    <!--right sidenav-->
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+<!--Javascript-->
+<!--<script>
+function publishReview()
+{
+    var msgt = document.querySelector("title").value;
+    var ta = document.getElementById("text").value;
+    var msgg = document.querySelector("game").value;
+    var rev = document.createElement("TEXTAREA");
+    rev.value = msg.value + ta.value + msgg.value;
+
+    button.appendChild(rev)
+}
+</script>-->
+<!--Footer Text-->
+<footer class="container-fluid text-center">
+  <p>2019 UniEdit. Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
