@@ -22,7 +22,7 @@ body{
   width: 100%;
   z-index: 2;
   background-color: black;
-  color: white
+  color: white;
 }
 
 .navbar .nav > li > a {

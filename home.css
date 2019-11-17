@@ -1,7 +1,3 @@
-body{
-  background-image: url(https://arma3.com/assets/img/wallpapers/contact/2/Arma%203%20Contact_wallpaper_1920x1200.jpg);
-}
-
 p {
   font-weight: normal;
   padding: 15px;
@@ -42,6 +38,8 @@ p {
   font-weight: bold;
   background-color: #151515;
   color: #848484;
+  overflow: auto;
+  max-height: 250px;
 }
 
 #thick {
@@ -50,6 +48,8 @@ p {
 
 #panel02 {
   font-weight: normal;
+  overflow: auto;
+  max-height: 250px;
 }
 
 #feed {
