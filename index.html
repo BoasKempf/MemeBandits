@@ -8,20 +8,21 @@
     <!--  -->
 </head>
 <body>
+
+  <title>MemeBandit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="windows-1252">
+
     <main>
       <!--HOMEPAGE-->
         <div class="page active" id="home">
           <head>
-
-            <title>MemeBandit</title>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <!--including files from W3Schools.com-->
             <script language="javascript" type="text/javascript" src="home.js"></script>
             <link rel="stylesheet" type="text/css" href="home.css" />
-            <!--own Css-file-->
-
           </head>
 
           <body>
@@ -106,17 +107,9 @@
         <div class="page" id="library">
 
           <head>
-            <title>MemeBandits</title>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-            <meta charset="utf-8">
-            <meta charset="windows-1252">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!--including files from W3Schools.com-->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <link  rel="stylesheet" type="text/css" href="Library.css"/>
           </head>
+
           <body>
           <!--navigation bar-->
           <nav class="navbar navbar-inverse">
@@ -160,19 +153,34 @@
                               <th>Release Year</th>
                           </tr>
                           <tr>
-                              <td>Halo CE</td>
-                              <td>Bungie</td>
-                              <td>4</td>
+                              <td>God Of War</td>
+                              <td>SIE Santa Monica Studio</td>
+                              <td>2018</td>
                           </tr>
                           <tr>
-                              <td>Halo 2</td>
-                              <td>Bungie</td>
-                              <td>4</td>
+                              <td>Overwatch</td>
+                              <td>Blizzard Entertainment</td>
+                              <td>2016</td>
                           </tr>
                           <tr>
-                              <td>COD</td>
+                              <td>Call of Duty: Modern Warfare</td>
                               <td>Activision</td>
-                              <td>4</td>
+                              <td>2019</td>
+                          </tr>
+                          <tr>
+                              <td>Halo 5: Gurdians</td>
+                              <td>Xbox Game Studios</td>
+                              <td>2015</td>
+                          </tr>
+                          <tr>
+                              <td>League of Legends</td>
+                              <td>Riot Games</td>
+                              <td>2009</td>
+                          </tr>
+                          <tr>
+                              <td>Red Dead Redemption 2</td>
+                              <td>Rockstar Games</td>
+                              <td>2018</td>
                           </tr>
                       </table>
                       </center>
@@ -195,33 +203,29 @@
           </div>
 
           <script>
-
               var rIndex,
                   table = document.getElementById("table");
-
               // check the empty input
               function checkEmptyInput()
               {
                   var isEmpty = false,
-                      fname = document.getElementById("title").value,
-                      lname = document.getElementById("publisher").value,
-                      age = document.getElementById("release").value;
-
+                      title = document.getElementById("title").value,
+                      publisher = document.getElementById("publisher").value,
+                      release = document.getElementById("release").value;
                   if(title === ""){
-                      alert("First Name Connot Be Empty");
+                      alert("Title Connot Be Empty");
                       isEmpty = true;
                   }
                   else if(publisher === ""){
-                      alert("Last Name Connot Be Empty");
+                      alert("Publisher Connot Be Empty");
                       isEmpty = true;
                   }
                   else if(release === ""){
-                      alert("Age Connot Be Empty");
+                      alert("Release Connot Be Empty");
                       isEmpty = true;
                   }
                   return isEmpty;
               }
-
               // add Row
               function addHtmlTableRow()
               {
@@ -237,11 +241,9 @@
                       title = document.getElementById("title").value,
                       publisher = document.getElementById("publisher").value,
                       genre = document.getElementById("release").value;
-
                   cell1.innerHTML = title;
                   cell2.innerHTML = publisher;
                   cell3.innerHTML = genre;
-
                   var text_to_save=document.getElementById('title').value;
                   var text_to_save2=document.getElementById('publisher').value;
                   var text_to_save3=document.getElementById('release').value;
@@ -249,16 +251,13 @@
                   localStorage.setItem("publisher", text_to_save2); // save the item
                   localStorage.setItem("release", text_to_save3); // save the item
                   alert("data has been saved");
-
                   // call the function to set the event to the new row
                   selectedRowToInput();
               }
               }
-
               // display selected row data into input text
               function selectedRowToInput()
               {
-
                   for(var i = 1; i < table.rows.length; i++)
                   {
                       table.rows[i].onclick = function()
@@ -277,14 +276,13 @@
               {
                   var title = document.getElementById("title").value,
                       publisher = document.getElementById("publisher").value,
-                      genre = document.getElementById("genre").value;
+                      release = document.getElementById("release").value;
                  if(!checkEmptyInput()){
                   table.rows[rIndex].cells[0].innerHTML = title;
                   table.rows[rIndex].cells[1].innerHTML = publisher;
                   table.rows[rIndex].cells[2].innerHTML = release;
                 }
               }
-
               function removeSelectedRow()
               {
                   table.deleteRow(rIndex);
@@ -293,7 +291,6 @@
                   document.getElementById("publisher").value = "";
                   document.getElementById("release").value = "";
               }
-
             $('#table tr').each(function(row, tr){
               TableData = TableData
                   + $(tr).find('td:eq(0)').text() + ' '  // Title
@@ -305,10 +302,8 @@
           <script>
           (function(document) {
                       'use strict';
-
                       var TableFilter = (function(myArray) {
                           var search_input;
-
                           function _onInputSearch(e) {
                               search_input = e.target;
                               var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
@@ -322,7 +317,6 @@
                                   });
                               });
                           }
-
                           return {
                               init: function() {
                                   var inputs = document.getElementsByClassName('search-input');
@@ -332,30 +326,20 @@
                               }
                           };
                       })(Array.prototype);
-
                       document.addEventListener('readystatechange', function() {
                           if (document.readyState === 'complete') {
                               TableFilter.init();
                           }
                       });
-
                   })(document);
           </script>
-          <!--Footer Text-->
-          <footer class="container-fluid text-center">
-            <p>2017 UniEdit. All Rights reserved.</p>
-          </footer>
           </body>
 
         </div>
 
+
+        <!--REVIEWS-->
         <div class="page" id="review">
-            <h1>Reviews</h1>
-            <ol>
-              <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
-              <li><a href="#" data-target="library" class="nav-link">LIBRARY</a></li>
-              <li><a href="#" data-target="review" class="nav-link">REVIEWS</a></li>
-            </ol>
         </div>
 
     </main>

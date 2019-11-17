@@ -1,13 +1,5 @@
-/* Set custome background*/
 body{
   background-image: url(https://arma3.com/assets/img/wallpapers/contact/2/Arma%203%20Contact_wallpaper_1920x1200.jpg);
-}
-
-/* Set custome background color, black text and some padding */
-footer {
-  background-color: black;
-  color: white;
-  padding: 15px;
 }
 
 p {

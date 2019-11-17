@@ -8,3 +8,36 @@
 }
 .active{
     display: block;
+}
+
+body{
+      background-image: url(https://arma3.com/assets/img/wallpapers/contact/2/Arma%203%20Contact_wallpaper_1920x1200.jpg);
+}
+
+.navbar {
+  margin-bottom: 50;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+  color: white
+}
+
+.navbar .nav > li > a {
+  float: none;
+  text-decoration: none;
+  color:  white;
+}
+
+.row.content {height: 952px}
+
+@media screen and (max-width: 1000px) {
+  .sidenav {
+    height: auto;
+    padding: 50px;
+    position: fixed;
+  }
+  .row.content {height:auto;}
+}
