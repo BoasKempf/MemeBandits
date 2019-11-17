@@ -1,0 +1,121 @@
+/*navbar declaration-->
+/* Set custome background color, black text and some padding */
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+body{
+  background-image: url(https://arma3.com/assets/img/wallpapers/contact/2/Arma%203%20Contact_wallpaper_1920x1200.jpg);
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 50;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+  color: white;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  text-decoration: none;
+  color:  white;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 952px}
+
+/* height is set to 'auto' for small screens */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+    position: fixed;
+  }
+  .row.content {height:auto;}
+}
+
+/*font of the navbar*/
+#navbarFont {
+  font-weight: bold;
+  color: black;
+}
+
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border: white;
+        margine: white;
+        border-radius: 13px;
+        border-spacing: 0;
+        border-bottom: 1px
+        border-bottom: none;
+        color: white;
+  }
+
+  tr:hover td {
+          background-color: #9f9fdf;
+        }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+
+    }
+
+    .input[type=text] {
+      width: 130px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+      border: 0;
+  }
+
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+      width: 100%;
+      border:0;
+  }
+
+  th {
+    background-color: #9f9fdf;
+  }
+
+  tr:nth-child(even) {
+    background-color: #white;
+  }
+
+  #navbarFont {
+    font-weight: bold;
+    color: white;
+  }
+
+  h1 {
+    color: white
+  }
+
+  #button {
+    color: #9f9fdf;
+    background-color: #9f9fdf;
+  }
+
+  #tag {
+    color: white;
+  }
+
+  body {
+    color: black;
+  }
