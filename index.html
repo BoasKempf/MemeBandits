@@ -1,10 +1,364 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>MemeBandits</title>
-  </head>
-  <body>
-    Test file
-  </body>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="index.css">
+    <!--  -->
+</head>
+<body>
+    <main>
+      <!--HOMEPAGE-->
+        <div class="page active" id="home">
+          <head>
+
+            <title>MemeBandit</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <!--including files from W3Schools.com-->
+            <script language="javascript" type="text/javascript" src="home.js"></script>
+            <link rel="stylesheet" type="text/css" href="home.css" />
+            <!--own Css-file-->
+
+          </head>
+
+          <body>
+
+            <!--navigation bar-->
+            <header>
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <p class="navbar-brand" href="#" id="navbarFont">MemeBandits</p>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                    <li><a href="#" data-target="library" class="nav-link">LIBRARY</a></li>
+                    <li><a href="#" data-target="review" class="nav-link">REVIEWS</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+            <!--general text definition-->
+            <div class="container-fluid text-center">
+              <div class="row content">
+                <!--left sidenav-->
+                <div class="col-sm-2 sidenav">
+                </div>
+                <!--Text center-->
+                <!--articles-->
+                <div class="col-sm-8 text-left">
+                  <br><br><br>
+                  <div class="box" id="feed">
+                    <h1>
+                      <center>News-Feed</center>
+                    </h1>
+                  </div>
+                  <br>
+                  <!-- <h3>Neuste Artikel</h3> -->
+                  <br>
+                  <div class="panel panel-default" id="panel01">
+                    <div class="panel-heading" id="panel01">Overwatch Multiplayer Gameplay</div>
+                    <div class="panel-body" id="panel02">Overwatch 2 wohl mit Feinden und Diablo 4 mit Lilith</div>
+                    <p id="test1" style="display: none">TESTTESTTESTTESTTESTTESTTESTTEST</p>
+                    <center><a href="javascript:toggle('test1')">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="button">Weiterlesen</button>
+                      </a></center>
+                  </div>
+                  <div class="panel panel-default" id="panel01">
+                    <div class="panel-heading" id="panel01">Battlefront Multiplayer Gameplay</div>
+                    <div class="panel-body" id="panel02">Alles zu den neusten Änderungen im Star Wars Battlefront Universe</div>
+                    <p id="test2" style="display: none">TESTTESTTESTTESTTESTTESTTESTTEST</p>
+                    <center><a href="javascript:toggle('test2')">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="button">Weiterlesen</button>
+                      </a></center>
+                  </div>
+                  <div class="panel panel-default" id="panel01">
+                    <div class="panel-heading" id="panel01">Starcraft Multiplayer Gameplay</div>
+                    <div class="panel-body" id="panel02">Was hat Blizzard mit dem neuen Update beabsichtigt?</div>
+                    <p id="test3" style="display: none">TESTTESTTESTTESTTESTTESTTESTTEST</p>
+                    <center><a href="javascript:toggle('test3')">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="button">Weiterlesen</button>
+                      </a></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Footer Text-->
+            <footer class="container-fluid text-center">
+              <p>2019 UniEdit. Alle Rechte vorbehalten.</p>
+            </footer>
+
+          </body>
+        </div>
+
+
+        <!--LIBRARY-->
+        <div class="page" id="library">
+
+          <head>
+            <title>MemeBandits</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <meta charset="utf-8">
+            <meta charset="windows-1252">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!--including files from W3Schools.com-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link  rel="stylesheet" type="text/css" href="Library.css"/>
+          </head>
+          <body>
+          <!--navigation bar-->
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="navbarFont">MemeBandits</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                  <li><a href="#" data-target="library" class="nav-link">LIBRARY</a></li>
+                  <li><a href="#" data-target="review" class="nav-link">REVIEWS</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--general text definition-->
+          <div class="container-fluid text-center">
+            <div class="row content">
+              <!--left sidenav-->
+              <div class="col-sm-2 sidenav">
+              </div>
+              <!--Text center-->
+              <!--subscribed games / table definiton-->
+              <div class="col-sm-8 text-left">
+                <br><br><br><h1><center>Library</center></h1>
+              <!--right sidenav-->
+              <div class="container">
+                <br><br><input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+                <br>
+                  <div>
+                      <center><table class="customers-list" id="table" border="1">
+                          <tr>
+                              <th>Title</th>
+                              <th>Publisher</th>
+                              <th>Release Year</th>
+                          </tr>
+                          <tr>
+                              <td>Halo CE</td>
+                              <td>Bungie</td>
+                              <td>4</td>
+                          </tr>
+                          <tr>
+                              <td>Halo 2</td>
+                              <td>Bungie</td>
+                              <td>4</td>
+                          </tr>
+                          <tr>
+                              <td>COD</td>
+                              <td>Activision</td>
+                              <td>4</td>
+                          </tr>
+                      </table>
+                      </center>
+                  </div>
+                  <br>
+                  <div class="tab tab-2">
+                      Title :<input type="text" name="title" id="title">
+                      Publisher :<input type="text" name="publisher" id="publisher">
+                      Release Year :<input type="number" name="genre" id="release">
+
+                      <button onclick="addHtmlTableRow();">Add</button>
+                      <button onclick="editHtmlTableSelectedRow();">Edit</button>
+                      <button onclick="removeSelectedRow();">Remove</button>
+                  </div>
+              </div>
+
+              <div class="col-sm-2 sidenav">
+              </div>
+            </div>
+          </div>
+
+          <script>
+
+              var rIndex,
+                  table = document.getElementById("table");
+
+              // check the empty input
+              function checkEmptyInput()
+              {
+                  var isEmpty = false,
+                      fname = document.getElementById("title").value,
+                      lname = document.getElementById("publisher").value,
+                      age = document.getElementById("release").value;
+
+                  if(title === ""){
+                      alert("First Name Connot Be Empty");
+                      isEmpty = true;
+                  }
+                  else if(publisher === ""){
+                      alert("Last Name Connot Be Empty");
+                      isEmpty = true;
+                  }
+                  else if(release === ""){
+                      alert("Age Connot Be Empty");
+                      isEmpty = true;
+                  }
+                  return isEmpty;
+              }
+
+              // add Row
+              function addHtmlTableRow()
+              {
+                  // get the table by id
+                  // create a new row and cells
+                  // get value from input text
+                  // set the values into row cell's
+                  if(!checkEmptyInput()){
+                  var newRow = table.insertRow(table.length),
+                      cell1 = newRow.insertCell(0),
+                      cell2 = newRow.insertCell(1),
+                      cell3 = newRow.insertCell(2),
+                      title = document.getElementById("title").value,
+                      publisher = document.getElementById("publisher").value,
+                      genre = document.getElementById("release").value;
+
+                  cell1.innerHTML = title;
+                  cell2.innerHTML = publisher;
+                  cell3.innerHTML = genre;
+
+                  var text_to_save=document.getElementById('title').value;
+                  var text_to_save2=document.getElementById('publisher').value;
+                  var text_to_save3=document.getElementById('release').value;
+                  localStorage.setItem("title", text_to_save); // save the item
+                  localStorage.setItem("publisher", text_to_save2); // save the item
+                  localStorage.setItem("release", text_to_save3); // save the item
+                  alert("data has been saved");
+
+                  // call the function to set the event to the new row
+                  selectedRowToInput();
+              }
+              }
+
+              // display selected row data into input text
+              function selectedRowToInput()
+              {
+
+                  for(var i = 1; i < table.rows.length; i++)
+                  {
+                      table.rows[i].onclick = function()
+                      {
+                        // get the seected row index
+                        rIndex = this.rowIndex;
+                        document.getElementById("title").value = this.cells[0].innerHTML;
+                        document.getElementById("publisher").value = this.cells[1].innerHTML;
+                        document.getElementById("release").value = this.cells[2].innerHTML;
+                      };
+                  }
+              }
+              selectedRowToInput();
+
+              function editHtmlTableSelectedRow()
+              {
+                  var title = document.getElementById("title").value,
+                      publisher = document.getElementById("publisher").value,
+                      genre = document.getElementById("genre").value;
+                 if(!checkEmptyInput()){
+                  table.rows[rIndex].cells[0].innerHTML = title;
+                  table.rows[rIndex].cells[1].innerHTML = publisher;
+                  table.rows[rIndex].cells[2].innerHTML = release;
+                }
+              }
+
+              function removeSelectedRow()
+              {
+                  table.deleteRow(rIndex);
+                  // clear input text
+                  document.getElementById("title").value = "";
+                  document.getElementById("publisher").value = "";
+                  document.getElementById("release").value = "";
+              }
+
+            $('#table tr').each(function(row, tr){
+              TableData = TableData
+                  + $(tr).find('td:eq(0)').text() + ' '  // Title
+                  + $(tr).find('td:eq(1)').text() + ' '  // Publisher
+                  + $(tr).find('td:eq(2)').text() + ' '  // Release
+                  + '\n';
+          });
+          </script>
+          <script>
+          (function(document) {
+                      'use strict';
+
+                      var TableFilter = (function(myArray) {
+                          var search_input;
+
+                          function _onInputSearch(e) {
+                              search_input = e.target;
+                              var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                              myArray.forEach.call(tables, function(table) {
+                                  myArray.forEach.call(table.tBodies, function(tbody) {
+                                      myArray.forEach.call(tbody.rows, function(row) {
+                                          var text_content = row.textContent.toLowerCase();
+                                          var search_val = search_input.value.toLowerCase();
+                                          row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                                      });
+                                  });
+                              });
+                          }
+
+                          return {
+                              init: function() {
+                                  var inputs = document.getElementsByClassName('search-input');
+                                  myArray.forEach.call(inputs, function(input) {
+                                      input.oninput = _onInputSearch;
+                                  });
+                              }
+                          };
+                      })(Array.prototype);
+
+                      document.addEventListener('readystatechange', function() {
+                          if (document.readyState === 'complete') {
+                              TableFilter.init();
+                          }
+                      });
+
+                  })(document);
+          </script>
+          <!--Footer Text-->
+          <footer class="container-fluid text-center">
+            <p>2017 UniEdit. All Rights reserved.</p>
+          </footer>
+          </body>
+
+        </div>
+
+        <div class="page" id="review">
+            <h1>Reviews</h1>
+            <ol>
+              <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+              <li><a href="#" data-target="library" class="nav-link">LIBRARY</a></li>
+              <li><a href="#" data-target="review" class="nav-link">REVIEWS</a></li>
+            </ol>
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
 </html>
